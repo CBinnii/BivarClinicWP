@@ -1,0 +1,38 @@
+.button {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 991px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-default {
+        position: relative;
+        font-family: 'midnight_sans', 'Open Sans', Verdana, sans-serif;
+        background-color: $primary;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 50px;
+        color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        margin-right: 15px;
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: -0.6px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 991px) {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
+}
