@@ -1,275 +1,283 @@
 <!DOCTYPE html>
 <html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home - Bívar Clinic</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home - Bívar Clinic</title>
-	<link rel="icon" type="image/x-icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
-	<script src="js/bootstrap.bundle.min.js"></script>
-
-	<!-- Demo styles -->
-	<style>
-	</style>
-</head>
-
-<body>
-	<header id="header" class="header">
-		<nav class="navbar navbar-expand-lg">
-			<div class="container">
-				<div class="container-fluid d-flex p-0">
-					<a class="navbar-brand" href="#">
-						<img src="./images/logo.png" alt="Logo Bívar Clinic">
-					</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<div class="menu-button" id="menu-button" onclick="menuMobile()">
-							<div class="bar"></div>
-							<div class="bar"></div>
-							<div class="bar"></div>
+	<body>
+		<header id="header" class="header">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<div class="container-fluid d-flex p-0">
+						<a class="navbar-brand" href="index.html">
+							<img src="./images/logo-white.jpg" alt="Logo Bívar Clinic">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<div class="menu-button" id="menu-button" onclick="menuMobile()">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="index.html">Sobre nós</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="services.html">Serviços</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="cases.html">Casos clínicos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="blog.html">Blog</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contactos</a>
+								</li>
+							</ul>
 						</div>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Sobre nós</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Serviços</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Casos clínicos</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Blog</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Contactos</a>
-							</li>
-						</ul>
 					</div>
 				</div>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="slider">
+				<div class="banner" style="background-image: url(./images/banner.jpg);"></div>
 			</div>
-		</nav>
-	</header>
 
-	<section class="main">
-		<div class="slider">
-			<div class="banner" style="background-image: url(./images/consultorio.jpg);">
-				<h1>Onde a beleza encontra <br />a excelência médica.</h1>
-			</div>
-		</div>
+			<div class="section about">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 left">
+							<img src="./images/conversa.jpg" alt="Imagem com 2 pessoas conversando">
 
-		<div class="about">
-			<div class="container">
-				<h1>Sobre nós</h1>
-
-				<div class="row">
-					<div class="col-sm-4 col-lg-3 left">
-						<img src="./images/conversa.jpg" alt="Imagem com 2 pessoas conversando">
-
-						<p class="name">Bívar Clinic</p>
-						<p class="signature">by Eduardo Matos</p>
-					</div>
-					<div class="col-sm-8 col-lg-9 right">
-						<p>Bem-vindo à Bívar Clinic, onde a excelência médica se alia à arte da cirurgia plástica.</p>
-						<p>Fundada e liderada pelo Dr. Eduardo Matos, cirurgião plástico de renome internacional, a
-							nossa clínica orgulha-se de oferecer uma equipa multidisciplinar especializada em diversas
-							áreas da cirurgia plástica e estética.</p>
-						<p>Para além do Dr. Eduardo Matos, especialista em Cirurgia Plástica Reconstrutiva e Estética e
-							Cirurgia Plástica Pós-Perda de Peso, contamos com uma equipa de profissionais altamente
-							qualificados e especializados em Medicina Estética e Dermatologia. Todos os membros da nossa
-							equipa partilham a mesma paixão pela excelência médica e pelo bem-estar dos nossos
-							pacientes.</p>
-						<p>Na Bívar Clinic, a nossa missão é oferecer um ambiente acolhedor e seguro, onde os pacientes
-							possam confiar em receber tratamentos personalizados e cuidados de excelência. Estamos
-							empenhados em ajudá-lo a alcançar os seus objetivos estéticos e a recuperar a sua confiança
-							e autoestima.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="services">
-			<div class="container">
-				<h1>Serviços</h1>
-
-				<div class="grid">
-					<div class="row m-0">
-						<div class="col-md-6 col-lg-3 p-0 d-flex justify-content-center">
-							<figure class="effect-goliath">
-								<img src="images/service-1.jpg" alt="Serviço 1" />
-								<figcaption>
-									<p>Cirurgia Plástica Reconstrutiva e Estética</p>
-									<a href="#">View more</a>
-								</figcaption>
-							</figure>
+							<p class="name">Bívar Clinic</p>
+							<p class="signature">by Eduardo Matos</p>
 						</div>
-						<div class="col-md-6 col-lg-3 p-0 d-flex justify-content-center">
-							<figure class="effect-goliath">
-								<img src="images/service-2.jpg" alt="Serviço 2" />
-								<figcaption>
-									<p>Cirurgia Plástica Pós-Perda de Peso</p>
-									<a href="#">View more</a>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-md-6 col-lg-3 p-0 d-flex justify-content-center">
-							<figure class="effect-goliath">
-								<img src="images/service-3.jpg" alt="Serviço 3" />
-								<figcaption>
-									<p>Medicina estética</p>
-									<a href="#">View more</a>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="col-md-6 col-lg-3 p-0 d-flex justify-content-center">
-							<figure class="effect-goliath">
-								<img src="images/service-4.jpg" alt="Serviço 4" />
-								<figcaption>
-									<p>Dermatologia</p>
-									<a href="#">View more</a>
-								</figcaption>
-							</figure>
+						<div class="col-md-9 right">
+							<h1 class="title-section primary right">Sobre nós</h1>
+			
+							<p>Seja bem-vindo à Bívar Clinic, o seu destino para cirurgia plástica e medicina estética no coração de Lisboa. Com uma equipa multidisciplinar liderada pelo Dr. Eduardo Matos, procuraremos os melhores tratamentos para si com a máxima segurança.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="clinic-case">
-			<div class="container">
-				<h1>Casos clínicos</h1>
+			<div class="section services">
+				<div class="container">
+					<h1 class="title-section primary">Serviços</h1>
 
-				<div class="cases">
-				</div>
-
-				<div class="row">
-					<div class="col-sm-4 col-lg-3 left">
-						<div class="swiper-pagination"></div>
+					<div class="grid">
+						<div class="row m-0">
+							<div class="col-md-6 col-lg-3 p-0 d-flex justify-content-center">
+								<figure class="effect-goliath">
+									<img src="images/service-1.jpg" alt="Serviço 1" />
+									<figcaption>
+										<p>Cirurgia Plástica Reconstrutiva e Estética</p>
+										<a href="#">View more</a>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="col-md-6 col-lg-3 p-0 d-flex justify-content-center">
+								<figure class="effect-goliath">
+									<img src="images/service-2.jpg" alt="Serviço 2" />
+									<figcaption>
+										<p>Cirurgia Plástica Pós-Perda de Peso</p>
+										<a href="#">View more</a>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="col-md-6 col-lg-3 p-0 d-flex justify-content-center">
+								<figure class="effect-goliath">
+									<img src="images/service-3.jpg" alt="Serviço 3" />
+									<figcaption>
+										<p>Medicina estética</p>
+										<a href="#">View more</a>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="col-md-6 col-lg-3 p-0 d-flex justify-content-center">
+								<figure class="effect-goliath">
+									<img src="images/service-4.jpg" alt="Serviço 4" />
+									<figcaption>
+										<p>Dermatologia</p>
+										<a href="#">View more</a>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
 					</div>
-					<div class="col-sm-8 col-lg-9 right">
-						<div class="swiper mySwiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>MAMOPLASTIA DE REDUÇÃO</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>MAMOPLASTIA DE AUMENTO</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>MASTOPEXIA SEM PROTÉSES</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>MASTOPEXIA COM PRÓTESES</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>LIPOBODYLIFT</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>LIPOABDOMINOPLASTIA 360 HD</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>BRAQUIPLASTIA</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>LIPOASPIRAÇÃO E LIPO ESCULTURA</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>MOMMY MAKEOVER</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
+				</div>
+			</div>
 
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>RINOPLASTIA</p>
-										<img src="./images/arrow.svg" alt="Arrow">
+			<div class="section clinic-case">
+				<div class="container">
+					<h1 class="title-section primary">Casos clínicos</h1>
+
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link mb-3 p-3 shadow active" id="body-tab" data-toggle="pill" href="#body" role="tab" aria-controls="body" aria-selected="true">
+									<i class="fa fa-user-circle-o mr-2"></i>
+									<span class="font-weight-bold small text-uppercase title-tab">Corpo</span>
+
+									<div class="nav-pills-content">
+										<div class="swiper-pagination swiper-pagination-body"></div>
+									</div>
+								</a>
+			
+								<a class="nav-link mb-3 p-3 shadow" id="face-tab" data-toggle="pill" href="#face" role="tab" aria-controls="face" aria-selected="false">
+									<i class="fa fa-calendar-minus-o mr-2"></i>
+									<span class="font-weight-bold small text-uppercase title-tab">Face</span>
+
+									<div class="nav-pills-content">
+										<div class="swiper-pagination swiper-pagination-face"></div>
+									</div>
+								</a>
+							</div>
+						</div>
+			
+						<div class="col-lg-9">
+							<div class="tab-content" id="v-pills-tabContent">
+								<div class="tab-pane fade shadow rounded bg-white show active overflow-hidden" id="body" role="tabpanel" aria-labelledby="body-tab">
+									<div class="swiper mySwiperBody">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img src="./images/cases/mamoplastia-reducao.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>MAMOPLASTIA DE REDUÇÃO</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/mamoplastia-aumento.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>MAMOPLASTIA DE AUMENTO</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/mastopexia-sem-proteses.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>MASTOPEXIA SEM PROTÉSES</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/mamoplastia-aumento-proteses.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>MASTOPEXIA COM PRÓTESES</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/lipobodylift.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>LIPOBODYLIFT</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/lipoabdominoplastia-360-HD.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>LIPOABDOMINOPLASTIA 360 HD</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/lipoescultura.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>Lipoescultura dos braços</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/lipoaspiracao.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>LIPOASPIRAÇÃO E LIPO ESCULTURA</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/mommy-final-1.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>MOMMY MAKEOVER</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>BLEFAROPLASTIA</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>OTOPLASTIA</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>FENDA LABIAL</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>TOXINA BOTULINICA</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>PREENCHIMENTOS</p>
-										<img src="./images/arrow.svg" alt="Arrow">
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
-									<div class="about-slider">
-										<p>PEELING FACIAL</p>
-										<img src="./images/arrow.svg" alt="Arrow">
+								
+								<div class="tab-pane fade shadow rounded bg-white overflow-hidden" id="face" role="tabpanel" aria-labelledby="face-tab">
+									<div class="swiper mySwiperFace">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<img src="./images/cases/rinoplastia-2.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>RINOPLASTIA</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/blefaroplastia-superior.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>BLEFAROPLASTIA</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/otoplastia.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>OTOPLASTIA</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/fenda-labial.png" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>FENDA LABIAL</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/toxina.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>TOXINA BOTULINICA</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/preenchimento.png" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>PREENCHIMENTOS</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/cases/peeling-facial-1.jpg" alt="Imagem com 2 pessoas conversando">
+												<div class="about-slider">
+													<p>PEELING FACIAL</p>
+													<img src="./images/arrow.svg" alt="Arrow">
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -277,196 +285,236 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="blog">
-			<div class="container">
-				<h1>Blog</h1>
+			<div class="section blog">
+				<div class="container">
+					<h1 class="title-section">Blog</h1>
 
-				<div class="row">
-					<div class="col-sm-4 post">
-						<div class="img" style="background-image: url('./images/blog-1.png');">
-							<a href="#">
-								<div class="overlay">
-									<p>Lipoabdominoplastia: Uma Abordagem Moderna Para Contorno Corporal</p>
-								</div>
+					<div class="row">
+						<div class="col-sm-4 post">
+							<div class="img" style="background-image: url('./images/blog-1.png');">
+								<a href="#">
+									<div class="overlay">
+										<p>Lipoabdominoplastia: Uma Abordagem Moderna Para Contorno Corporal</p>
+									</div>
 
-								<div class="see-more">
-									Ver mais
-								</div>
-							</a>
+									<div class="see-more">
+										Ver mais
+									</div>
+								</a>
+							</div>
 						</div>
-					</div>
-					<div class="col-sm-4 post">
-						<div class="img" style="background-image: url('./images/blog-2.png');">
-							<a href="#">
-								<div class="overlay">
-									<p>Cirurgia Pós Bariátrica - Contorno Corporal Pós Perda De Peso</p>
-								</div>
+						<div class="col-sm-4 post-2">
+							<div class="img" style="background-image: url('./images/blog-2.png');">
+								<a href="#">
+									<div class="overlay">
+										<p>Cirurgia Pós Bariátrica - Contorno Corporal Pós Perda De Peso</p>
+									</div>
 
-								<div class="see-more">
-									Ver mais
-								</div>
-							</a>
+									<div class="see-more">
+										Ver mais
+									</div>
+								</a>
+							</div>
+							<hr class="divider">
+							<div class="img" style="background-image: url('./images/blog-3.png');">
+								<a href="#">
+									<div class="overlay">
+										<p>Reconstrução Mamária</p>
+									</div>
+
+									<div class="see-more">
+										Ver mais
+									</div>
+								</a>
+							</div>
 						</div>
-						<hr class="divider">
-						<div class="img" style="background-image: url('./images/blog-3.png');">
-							<a href="#">
-								<div class="overlay">
-									<p>Reconstrução Mamária</p>
-								</div>
+						<div class="col-sm-4 post">
+							<div class="img" style="background-image: url('./images/blog-4.png');">
+								<a href="#">
+									<div class="overlay">
+										<p>Lipobodylift</p>
+									</div>
 
-								<div class="see-more">
-									Ver mais
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-4 post">
-						<div class="img" style="background-image: url('./images/blog-4.png');">
-							<a href="#">
-								<div class="overlay">
-									<p>Lipobodylift</p>
-								</div>
-
-								<div class="see-more">
-									Ver mais
-								</div>
-							</a>
+									<div class="see-more">
+										Ver mais
+									</div>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="contact">
+			<div class="section contact">
+				<div class="container">
+					<h1 class="title-section primary">Contactos</h1>
+
+					<div class="row">
+						<div class="col-12">
+							<div class="button">
+								<a href="contact.html" class="button-default">Marcar avaliação</a>
+							</div>
+						</div>
+
+						<div class="col-sm-3">
+							<h6 class="text-uppercase">Localização</h6>
+							<p class="mb-2">Avenida Luís Bívar 93-D Lisboa</p>
+							<p class="m-0">Número de Registo ERS: <b>171683</b></p>
+							<p class="mb-2">Número licença ERS: <b>24329</b></p>
+							<p><a target="_blank" href="policy.html">Politica de Privacidade</a></p>
+						</div>
+						<div class="col-sm-3">
+							<h6 class="text-uppercase">Contacto</h6>
+							<p class="mb-2"><a target="_blank" href="tel:+351963732515">(+351) 963 732 515 <br />(chamada para rede móvel nacional)</a></p>
+							<p><a target="_blank" href="mailto:info@bivarclinic.pt?subject=Dúvidas via website&body=Olá, gostaria de tirar algumas dúvidas">info@bivarclinic.pt</a></p>
+						</div>
+						<div class="col-sm-3">
+							<h6 class="text-uppercase">Horário</h6>
+							<p>De segunda à sexta-feira <br />10h às 20h</p>
+						</div>
+						<div class="col-sm-3">
+							<h6 class="text-uppercase d-none d-md-block">Social</h6>
+
+							<ul>
+								<li>
+									<a href="http://api.whatsapp.com/send?1=pt_PT&phone=351963732515" target="_blank">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_266_21)">
+												<path
+													d="M20.5025 3.49206C19.3968 2.38078 18.0798 1.49967 16.6283 0.90013C15.1768 0.300592 13.6198 -0.00537612 12.0482 7.14833e-05C5.46332 7.14833e-05 0.0964826 5.34006 0.0964826 11.892C0.0964826 13.992 0.651256 16.032 1.68844 17.832L0 24L6.33166 22.344C8.0804 23.292 10.0462 23.796 12.0482 23.796C18.6332 23.796 24 18.456 24 11.904C24 8.72405 22.7578 5.73605 20.5025 3.49206ZM12.0482 21.78C10.2633 21.78 8.51457 21.3 6.98291 20.4L6.6211 20.184L2.85829 21.168L3.8593 17.52L3.61809 17.148C2.62643 15.5724 2.09987 13.7511 2.09849 11.892C2.09849 6.44405 6.5608 2.00407 12.0362 2.00407C14.6894 2.00407 17.1859 3.03606 19.0553 4.90806C19.9809 5.82481 20.7144 6.91525 21.2133 8.11616C21.7123 9.31707 21.9667 10.6046 21.9618 11.904C21.9859 17.352 17.5236 21.78 12.0482 21.78ZM17.4995 14.388C17.198 14.244 15.7266 13.524 15.4613 13.416C15.1839 13.32 14.991 13.272 14.7859 13.56C14.5809 13.86 14.0141 14.532 13.8452 14.724C13.6764 14.928 13.4955 14.952 13.194 14.796C12.8925 14.652 11.9276 14.328 10.794 13.32C9.90151 12.528 9.31055 11.556 9.12965 11.256C8.9608 10.956 9.10553 10.8 9.26231 10.644C9.39497 10.512 9.56382 10.296 9.70854 10.128C9.85327 9.96004 9.91357 9.82804 10.01 9.63604C10.1065 9.43204 10.0583 9.26404 9.98593 9.12005C9.91357 8.97605 9.31055 7.51205 9.06935 6.91205C8.82814 6.33605 8.57487 6.40805 8.39397 6.39605H7.81507C7.61005 6.39605 7.29648 6.46805 7.01909 6.76805C6.75377 7.06805 5.98191 7.78805 5.98191 9.25204C5.98191 10.716 7.05528 12.132 7.2 12.324C7.34472 12.528 9.31055 15.528 12.3015 16.812C13.0131 17.124 13.5678 17.304 14.002 17.436C14.7136 17.664 15.3648 17.628 15.8834 17.556C16.4623 17.472 17.6563 16.836 17.8975 16.14C18.1508 15.444 18.1508 14.856 18.0663 14.724C17.9819 14.592 17.801 14.532 17.4995 14.388Z"
+													fill="white" />
+											</g>
+											<defs>
+												<clipPath id="clip0_266_21">
+													<rect width="24" height="24" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=61560077876157" target="_blank">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_269_17)">
+												<path d="M18 0H14.4545C12.8874 0 11.3844 0.632141 10.2762 1.75736C9.16802 2.88258 8.54545 4.4087 8.54545 6V9.6H5V14.4H8.54545V24H13.2727V14.4H16.8182L18 9.6H13.2727V6C13.2727 5.68174 13.3972 5.37652 13.6189 5.15147C13.8405 4.92643 14.1411 4.8 14.4545 4.8H18V0Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+											</g>
+											<defs>
+												<clipPath id="clip0_269_17">
+													<rect width="24" height="24" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.tiktok.com/@bivar.clinic?_t=8mXIS2eMEDo&_r=1" target="_blank">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.8453 0V7.69719C9.16226 7.38878 7.42384 7.60005 5.86679 8.30223C4.30973 9.00441 3.00973 10.1634 2.14382 11.6213C1.27791 13.0792 0.888183 14.7652 1.02771 16.4496C1.16724 18.1341 1.82924 19.7351 2.92356 21.0348C4.01788 22.3344 5.49133 23.2694 7.14325 23.7125C8.79516 24.1556 10.5453 24.0851 12.1552 23.5108C13.7651 22.9365 15.1566 21.8863 16.1402 20.503C17.1238 19.1198 17.6517 17.4709 17.6519 15.7808V11.2974C18.9586 11.846 20.3647 12.1261 21.7845 12.1206H23V5.40027H21.7845C19.4715 5.40027 17.6519 3.55578 17.6519 1.20006V0H10.8453ZM13.2762 2.40012H15.328C15.8069 5.06426 17.8561 7.19556 20.5691 7.69239V9.63409C19.3074 9.45168 18.1685 8.98366 17.1135 8.28642L15.221 7.03596V15.7808C15.2209 16.9447 14.8673 18.0819 14.206 19.0454C13.5447 20.0089 12.606 20.7545 11.5111 21.1859C10.4162 21.6174 9.21551 21.7148 8.06399 21.4656C6.91247 21.2165 5.86305 20.6322 5.05129 19.7882C4.23952 18.9442 3.70269 17.8793 3.51012 16.731C3.31756 15.5827 3.47811 14.4038 3.97104 13.3466C4.46397 12.2893 5.26663 11.4022 6.27536 10.7999C7.28409 10.1976 8.45255 9.90771 9.62984 9.96771V11.8926C8.83792 11.8323 8.04598 12.0091 7.35737 12.3999C6.66876 12.7907 6.11546 13.3773 5.76968 14.0833C5.4239 14.7893 5.3017 15.5818 5.41904 16.3574C5.53637 17.133 5.88778 17.8557 6.42741 18.4311C6.96705 19.0065 7.66983 19.4079 8.44405 19.583C9.21827 19.7581 10.028 19.6987 10.7675 19.4125C11.507 19.1263 12.1419 18.6267 12.5895 17.9789C13.037 17.331 13.2763 16.565 13.2762 15.7808V2.40012ZM7.80663 15.7808C7.80663 15.383 7.96671 15.0014 8.25164 14.7201C8.53657 14.4388 8.92302 14.2807 9.32597 14.2807C9.72892 14.2807 10.1154 14.4388 10.4003 14.7201C10.6852 15.0014 10.8453 15.383 10.8453 15.7808C10.8453 16.1786 10.6852 16.5602 10.4003 16.8415C10.1154 17.1228 9.72892 17.2809 9.32597 17.2809C8.92302 17.2809 8.53657 17.1228 8.25164 16.8415C7.96671 16.5602 7.80663 16.1786 7.80663 15.7808Z" fill="white"/>
+										</svg>										
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.instagram.com/bivarclinic.pt?igsh=MXNndTdoaDBrN25wdQ%3D%3D&utm_source=qr" target="_blank">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_266_19)">
+												<path
+													d="M6.96 0H17.04C20.88 0 24 3.12 24 6.96V17.04C24 18.8859 23.2667 20.6562 21.9615 21.9615C20.6562 23.2667 18.8859 24 17.04 24H6.96C3.12 24 0 20.88 0 17.04V6.96C0 5.11409 0.733284 3.34379 2.03854 2.03854C3.34379 0.733284 5.11409 0 6.96 0ZM6.72 2.4C5.57426 2.4 4.47546 2.85514 3.6653 3.6653C2.85514 4.47546 2.4 5.57426 2.4 6.72V17.28C2.4 19.668 4.332 21.6 6.72 21.6H17.28C18.4257 21.6 19.5245 21.1449 20.3347 20.3347C21.1449 19.5245 21.6 18.4257 21.6 17.28V6.72C21.6 4.332 19.668 2.4 17.28 2.4H6.72ZM18.3 4.2C18.6978 4.2 19.0794 4.35804 19.3607 4.63934C19.642 4.92064 19.8 5.30218 19.8 5.7C19.8 6.09782 19.642 6.47936 19.3607 6.76066C19.0794 7.04197 18.6978 7.2 18.3 7.2C17.9022 7.2 17.5206 7.04197 17.2393 6.76066C16.958 6.47936 16.8 6.09782 16.8 5.7C16.8 5.30218 16.958 4.92064 17.2393 4.63934C17.5206 4.35804 17.9022 4.2 18.3 4.2ZM12 6C13.5913 6 15.1174 6.63214 16.2426 7.75736C17.3679 8.88258 18 10.4087 18 12C18 13.5913 17.3679 15.1174 16.2426 16.2426C15.1174 17.3679 13.5913 18 12 18C10.4087 18 8.88258 17.3679 7.75736 16.2426C6.63214 15.1174 6 13.5913 6 12C6 10.4087 6.63214 8.88258 7.75736 7.75736C8.88258 6.63214 10.4087 6 12 6ZM12 8.4C11.0452 8.4 10.1295 8.77928 9.45442 9.45442C8.77928 10.1295 8.4 11.0452 8.4 12C8.4 12.9548 8.77928 13.8705 9.45442 14.5456C10.1295 15.2207 11.0452 15.6 12 15.6C12.9548 15.6 13.8705 15.2207 14.5456 14.5456C15.2207 13.8705 15.6 12.9548 15.6 12C15.6 11.0452 15.2207 10.1295 14.5456 9.45442C13.8705 8.77928 12.9548 8.4 12 8.4Z"
+													fill="white" />
+											</g>
+											<defs>
+												<clipPath id="clip0_266_19">
+													<rect width="24" height="24" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+								</li>
+							</ul>
+
+							<div class="book">
+								<a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">
+									<span class="circle">Livro de</span> reclamações
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6224.5345953203!2d-9.149551!3d38.734628!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19330b3e278fb5%3A0x29276f8a7db931f2!2sAv.%20Lu%C3%ADs%20B%C3%ADvar%2093D%2C%201050-066%20Lisboa!5e0!3m2!1spt-PT!2spt!4v1718288589860!5m2!1spt-PT!2spt" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+					<img src="images/logo-white.jpg" alt="Logo Bívar Clinic">
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
 			<div class="container">
-				<h1>Contactos</h1>
+				<p>© 2024 All Rights Reserved.</p>
+			</div>
+		</footer>
 
-				<div class="row">
-					<div class="col-12">
-						<h3>Agende a sua consulta de avaliação</h3>
-						<!-- <p class="text-uppercase subtitle">CONSULTA DE AVALIAÇÃO GRATUITA</p> -->
-					</div>
-					<div class="col-sm-3">
-						<h6 class="text-uppercase">Localização</h6>
-						<p>Avenida Luís Bívar 93-D Lisboa</p>
-					</div>
-					<div class="col-sm-3">
-						<h6 class="text-uppercase">Contacto</h6>
-						<p><a target="_blank" href="tel:+351963732515">(+351) 963 732 515</a></p>
-						<p><a target="_blank" href="mailto:info@bivarclinic.pt?subject=Dúvidas via website&body=Olá, gostaria de tirar algumas dúvidas">info@bivarclinic.pt</a></p>
-					</div>
-					<div class="col-sm-3">
-						<h6 class="text-uppercase">Horário</h6>
-						<p>De segunda à sexta-feira 10h às 20h</p>
-					</div>
-					<div class="col-sm-3">
-						<h6 class="text-uppercase">Social</h6>
-						<ul>
-							<li>
-								<a href="http://api.whatsapp.com/send?1=pt_PT&phone=351963732515" target="_blank">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0_266_21)">
-											<path
-												d="M20.5025 3.49206C19.3968 2.38078 18.0798 1.49967 16.6283 0.90013C15.1768 0.300592 13.6198 -0.00537612 12.0482 7.14833e-05C5.46332 7.14833e-05 0.0964826 5.34006 0.0964826 11.892C0.0964826 13.992 0.651256 16.032 1.68844 17.832L0 24L6.33166 22.344C8.0804 23.292 10.0462 23.796 12.0482 23.796C18.6332 23.796 24 18.456 24 11.904C24 8.72405 22.7578 5.73605 20.5025 3.49206ZM12.0482 21.78C10.2633 21.78 8.51457 21.3 6.98291 20.4L6.6211 20.184L2.85829 21.168L3.8593 17.52L3.61809 17.148C2.62643 15.5724 2.09987 13.7511 2.09849 11.892C2.09849 6.44405 6.5608 2.00407 12.0362 2.00407C14.6894 2.00407 17.1859 3.03606 19.0553 4.90806C19.9809 5.82481 20.7144 6.91525 21.2133 8.11616C21.7123 9.31707 21.9667 10.6046 21.9618 11.904C21.9859 17.352 17.5236 21.78 12.0482 21.78ZM17.4995 14.388C17.198 14.244 15.7266 13.524 15.4613 13.416C15.1839 13.32 14.991 13.272 14.7859 13.56C14.5809 13.86 14.0141 14.532 13.8452 14.724C13.6764 14.928 13.4955 14.952 13.194 14.796C12.8925 14.652 11.9276 14.328 10.794 13.32C9.90151 12.528 9.31055 11.556 9.12965 11.256C8.9608 10.956 9.10553 10.8 9.26231 10.644C9.39497 10.512 9.56382 10.296 9.70854 10.128C9.85327 9.96004 9.91357 9.82804 10.01 9.63604C10.1065 9.43204 10.0583 9.26404 9.98593 9.12005C9.91357 8.97605 9.31055 7.51205 9.06935 6.91205C8.82814 6.33605 8.57487 6.40805 8.39397 6.39605H7.81507C7.61005 6.39605 7.29648 6.46805 7.01909 6.76805C6.75377 7.06805 5.98191 7.78805 5.98191 9.25204C5.98191 10.716 7.05528 12.132 7.2 12.324C7.34472 12.528 9.31055 15.528 12.3015 16.812C13.0131 17.124 13.5678 17.304 14.002 17.436C14.7136 17.664 15.3648 17.628 15.8834 17.556C16.4623 17.472 17.6563 16.836 17.8975 16.14C18.1508 15.444 18.1508 14.856 18.0663 14.724C17.9819 14.592 17.801 14.532 17.4995 14.388Z"
-												fill="white" />
-										</g>
-										<defs>
-											<clipPath id="clip0_266_21">
-												<rect width="24" height="24" fill="white" />
-											</clipPath>
-										</defs>
-									</svg>
-								</a>
-							</li>
-
-							<li>
-								<a href="https://www.facebook.com/profile.php?id=61560077876157" target="_blank">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0_269_17)">
-											<path d="M18 0H14.4545C12.8874 0 11.3844 0.632141 10.2762 1.75736C9.16802 2.88258 8.54545 4.4087 8.54545 6V9.6H5V14.4H8.54545V24H13.2727V14.4H16.8182L18 9.6H13.2727V6C13.2727 5.68174 13.3972 5.37652 13.6189 5.15147C13.8405 4.92643 14.1411 4.8 14.4545 4.8H18V0Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-										</g>
-										<defs>
-											<clipPath id="clip0_269_17">
-												<rect width="24" height="24" fill="white" />
-											</clipPath>
-										</defs>
-									</svg>
-								</a>
-							</li>
-
-							<li>
-								<a href="https://www.tiktok.com/@bivar.clinic?_t=8mXIS2eMEDo&_r=1" target="_blank">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path d="M10.8453 0V7.69719C9.16226 7.38878 7.42384 7.60005 5.86679 8.30223C4.30973 9.00441 3.00973 10.1634 2.14382 11.6213C1.27791 13.0792 0.888183 14.7652 1.02771 16.4496C1.16724 18.1341 1.82924 19.7351 2.92356 21.0348C4.01788 22.3344 5.49133 23.2694 7.14325 23.7125C8.79516 24.1556 10.5453 24.0851 12.1552 23.5108C13.7651 22.9365 15.1566 21.8863 16.1402 20.503C17.1238 19.1198 17.6517 17.4709 17.6519 15.7808V11.2974C18.9586 11.846 20.3647 12.1261 21.7845 12.1206H23V5.40027H21.7845C19.4715 5.40027 17.6519 3.55578 17.6519 1.20006V0H10.8453ZM13.2762 2.40012H15.328C15.8069 5.06426 17.8561 7.19556 20.5691 7.69239V9.63409C19.3074 9.45168 18.1685 8.98366 17.1135 8.28642L15.221 7.03596V15.7808C15.2209 16.9447 14.8673 18.0819 14.206 19.0454C13.5447 20.0089 12.606 20.7545 11.5111 21.1859C10.4162 21.6174 9.21551 21.7148 8.06399 21.4656C6.91247 21.2165 5.86305 20.6322 5.05129 19.7882C4.23952 18.9442 3.70269 17.8793 3.51012 16.731C3.31756 15.5827 3.47811 14.4038 3.97104 13.3466C4.46397 12.2893 5.26663 11.4022 6.27536 10.7999C7.28409 10.1976 8.45255 9.90771 9.62984 9.96771V11.8926C8.83792 11.8323 8.04598 12.0091 7.35737 12.3999C6.66876 12.7907 6.11546 13.3773 5.76968 14.0833C5.4239 14.7893 5.3017 15.5818 5.41904 16.3574C5.53637 17.133 5.88778 17.8557 6.42741 18.4311C6.96705 19.0065 7.66983 19.4079 8.44405 19.583C9.21827 19.7581 10.028 19.6987 10.7675 19.4125C11.507 19.1263 12.1419 18.6267 12.5895 17.9789C13.037 17.331 13.2763 16.565 13.2762 15.7808V2.40012ZM7.80663 15.7808C7.80663 15.383 7.96671 15.0014 8.25164 14.7201C8.53657 14.4388 8.92302 14.2807 9.32597 14.2807C9.72892 14.2807 10.1154 14.4388 10.4003 14.7201C10.6852 15.0014 10.8453 15.383 10.8453 15.7808C10.8453 16.1786 10.6852 16.5602 10.4003 16.8415C10.1154 17.1228 9.72892 17.2809 9.32597 17.2809C8.92302 17.2809 8.53657 17.1228 8.25164 16.8415C7.96671 16.5602 7.80663 16.1786 7.80663 15.7808Z" fill="white"/>
-									</svg>										
-								</a>
-							</li>
-
-							<li>
-								<a href="https://www.instagram.com/bivarclinic.pt?igsh=MXNndTdoaDBrN25wdQ%3D%3D&utm_source=qr" target="_blank">
-									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<g clip-path="url(#clip0_266_19)">
-											<path
-												d="M6.96 0H17.04C20.88 0 24 3.12 24 6.96V17.04C24 18.8859 23.2667 20.6562 21.9615 21.9615C20.6562 23.2667 18.8859 24 17.04 24H6.96C3.12 24 0 20.88 0 17.04V6.96C0 5.11409 0.733284 3.34379 2.03854 2.03854C3.34379 0.733284 5.11409 0 6.96 0ZM6.72 2.4C5.57426 2.4 4.47546 2.85514 3.6653 3.6653C2.85514 4.47546 2.4 5.57426 2.4 6.72V17.28C2.4 19.668 4.332 21.6 6.72 21.6H17.28C18.4257 21.6 19.5245 21.1449 20.3347 20.3347C21.1449 19.5245 21.6 18.4257 21.6 17.28V6.72C21.6 4.332 19.668 2.4 17.28 2.4H6.72ZM18.3 4.2C18.6978 4.2 19.0794 4.35804 19.3607 4.63934C19.642 4.92064 19.8 5.30218 19.8 5.7C19.8 6.09782 19.642 6.47936 19.3607 6.76066C19.0794 7.04197 18.6978 7.2 18.3 7.2C17.9022 7.2 17.5206 7.04197 17.2393 6.76066C16.958 6.47936 16.8 6.09782 16.8 5.7C16.8 5.30218 16.958 4.92064 17.2393 4.63934C17.5206 4.35804 17.9022 4.2 18.3 4.2ZM12 6C13.5913 6 15.1174 6.63214 16.2426 7.75736C17.3679 8.88258 18 10.4087 18 12C18 13.5913 17.3679 15.1174 16.2426 16.2426C15.1174 17.3679 13.5913 18 12 18C10.4087 18 8.88258 17.3679 7.75736 16.2426C6.63214 15.1174 6 13.5913 6 12C6 10.4087 6.63214 8.88258 7.75736 7.75736C8.88258 6.63214 10.4087 6 12 6ZM12 8.4C11.0452 8.4 10.1295 8.77928 9.45442 9.45442C8.77928 10.1295 8.4 11.0452 8.4 12C8.4 12.9548 8.77928 13.8705 9.45442 14.5456C10.1295 15.2207 11.0452 15.6 12 15.6C12.9548 15.6 13.8705 15.2207 14.5456 14.5456C15.2207 13.8705 15.6 12.9548 15.6 12C15.6 11.0452 15.2207 10.1295 14.5456 9.45442C13.8705 8.77928 12.9548 8.4 12 8.4Z"
-												fill="white" />
-										</g>
-										<defs>
-											<clipPath id="clip0_266_19">
-												<rect width="24" height="24" fill="white" />
-											</clipPath>
-										</defs>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
+		<div id="pestana">
+			<div class="pestana_wrapper fullwidth">
+				<div id="pestana_top">
+					<img class="show" width="93" height="93" src="images/dr.png" alt="Dr Eduardo Matos">
+				</div>
+		
+				<div id="pestana_bottom">
+					<span class="close_popup">x</span>
+					<a class="cta" href="#" target="_blank">Pedir orçamento</a>
 				</div>
 			</div>
 		</div>
-	</section>
 
-	<footer class="footer">
-		<div class="container">
-			<img src="images/logo.png" alt="Logo Bívar Clinic">
-
-			<p>© 2024 All Rights Reserved.</p>
-		</div>
-	</footer>
-
-	<!-- Swiper JS -->
-	<script src="js/swiper-bundle.min.js"></script>
-	<!-- App JS -->
-	<script src="js/app.js"></script>
+		<!-- Swiper JS -->
+		<script src="js/swiper-bundle.min.js"></script>
+		<!-- App JS -->
+		<script src="js/app.js"></script>
 
 
-	<!-- Initialize Swiper -->
-	<script>
-		// var menu = [
-		// 	{
-		// 		type: 'Corpo',
-		// 		names: [ 'MAMOPLASTIA DE REDUÇÃO', 'MAMOPLASTIA DE AUMENTO', 'MASTOPEXIA SEM PROTÉSES', 'MASTOPEXIA COM PRÓTESES', 'LIPOBODYLIFT', 'LIPOABDOMINOPLASTIA 360 HD', 'BRAQUIPLASTIA', 'LIPOASPIRAÇÃO E LIPO ESCULTURA', 'MOMMY MAKEOVER' ]
-		// 	},
-		// 	{
-		// 		type: 'Face',
-		// 		names: [ 'RINOPLASTIA', 'BLEFAROPLASTIA', 'OTOPLASTIA', 'FENDA LABIAL', 'TOXINA BOTULINICA', 'PREENCHIMENTOS', 'PEELING FACIAL' ]
-		// 	},
-		// ]
-		var menu = [ 'MAMOPLASTIA DE REDUÇÃO', 'MAMOPLASTIA DE AUMENTO', 'MASTOPEXIA SEM PROTÉSES', 'MASTOPEXIA COM PRÓTESES', 'LIPOBODYLIFT', 'LIPOABDOMINOPLASTIA 360 HD', 'BRAQUIPLASTIA', 'LIPOASPIRAÇÃO E LIPO ESCULTURA', 'MOMMY MAKEOVER', 'RINOPLASTIA', 'BLEFAROPLASTIA', 'OTOPLASTIA', 'FENDA LABIAL', 'TOXINA BOTULINICA', 'PREENCHIMENTOS', 'PEELING FACIAL'];
+		<!-- Initialize Swiper -->
+		<script>
+			var corpo = ['MAMOPLASTIA DE REDUÇÃO', 'MAMOPLASTIA DE AUMENTO', 'MASTOPEXIA SEM PROTÉSES', 'MASTOPEXIA COM PRÓTESES', 'LIPOBODYLIFT', 'LIPOABDOMINOPLASTIA 360 HD', 'LIPOESCULTURA', 'LIPOASPIRAÇÃO E LIPO ESCULTURA', 'MOMMY MAKEOVER' ]
+			var face = [ 'RINOPLASTIA', 'BLEFAROPLASTIA', 'OTOPLASTIA', 'FENDA LABIAL', 'TOXINA BOTULINICA', 'PREENCHIMENTOS', 'PEELING FACIAL' ]
 
-		var swiper = new Swiper(".mySwiper", {
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-				renderBullet: function (index, className) {
-					return '<span class="' + className + '">' + ((menu[index])) + "</span>";
+			var menu = [ 'MAMOPLASTIA DE REDUÇÃO', 'MAMOPLASTIA DE AUMENTO', 'MASTOPEXIA SEM PROTÉSES', 'MASTOPEXIA COM PRÓTESES', 'LIPOBODYLIFT', 'LIPOABDOMINOPLASTIA 360 HD', 'LIPOESCULTURA', 'LIPOASPIRAÇÃO E LIPO ESCULTURA', 'MOMMY MAKEOVER', 'RINOPLASTIA', 'BLEFAROPLASTIA', 'OTOPLASTIA', 'FENDA LABIAL', 'TOXINA BOTULINICA', 'PREENCHIMENTOS', 'PEELING FACIAL'];
+
+			var swiper = new Swiper(".mySwiper", {
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '">' + ((menu[index])) + "</span>";
+					},
 				},
-			},
-		});
-	</script>
-</body>
+			});
 
+			var swiper = new Swiper(".mySwiperBody", {
+				pagination: {
+					el: ".swiper-pagination-body",
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '">' + ((corpo[index])) + "</span>";
+					},
+				},
+			});
+
+			var swiper = new Swiper(".mySwiperFace", {
+				pagination: {
+					el: ".swiper-pagination-face",
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '">' + ((face[index])) + "</span>";
+					},
+				},
+			});
+		</script>
+	</body>
 </html>

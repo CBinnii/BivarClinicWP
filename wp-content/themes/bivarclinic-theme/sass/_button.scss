@@ -1,27 +1,29 @@
 .button {
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 
     @media screen and (max-width: 991px) {
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
 
     .button-default {
         position: relative;
-        font-family: 'midnight_sans', 'Open Sans', Verdana, sans-serif;
+        font-family: 'Montserrat', 'Open Sans', Verdana, sans-serif;
         background-color: $primary;
-        padding: 15px 30px;
+        padding: 15px 60px;
         border: none;
         border-radius: 50px;
-        color: $black;
+        color: $white;
         display: flex;
         align-items: center;
         justify-content: space-between;
         text-transform: uppercase;
         margin-right: 15px;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 900;
         line-height: normal;
         letter-spacing: -0.6px;
@@ -32,7 +34,7 @@
 
         @media screen and (max-width: 991px) {
             font-size: 16px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
     }
 }

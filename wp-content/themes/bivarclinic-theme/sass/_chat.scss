@@ -1,0 +1,193 @@
+// .chat {
+//     position: fixed;
+//     z-index: 999;
+//     bottom: 10px;
+//     right: 27px;
+
+//     .chat-channel {
+//         width: 54px;
+//         height: 54px;
+//         background-color: $white;
+//         border-radius: 100%;
+
+//         a {
+//             display: block;
+//             width: 54px;
+//             height: 54px;
+//             border-radius: 50%;
+//             cursor: pointer;
+//             position: relative;
+//             outline: 0;
+//         }
+
+//         .chat-tooltip {
+//             opacity: 1;
+
+//             .on-hover-text {
+//                 background: $secundary;
+//                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+//                 color: $white;
+//                 width: 205px;
+//                 height: 50px;
+//                 border-radius: 40px;
+//                 font-weight: 700;
+//                 font-size: 16px;
+//                 line-height: 21px;
+//                 position: relative;
+//                 animation: ease-out forwards tooltips-horz;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 position: absolute;
+//                 top: 0;
+//                 right: 0px;
+//             }
+//         }
+//     }
+// }
+
+#pestana {
+    position: fixed;
+    right: 0;
+    bottom: calc(50% - 150px);
+    z-index: 999;
+    // display: none;
+    min-width: 99px;
+
+    @media screen and (max-width: 992px) {
+        position: fixed;
+        right: 0;
+        top: inherit;
+        bottom: 0;
+        min-width: 100%;
+        width: 100%
+    }
+
+    .pestana_wrapper {
+        position: relative;
+
+        #pestana_top {
+            position: absolute;
+            width: 100%;
+            top: -50px;
+            left: 0;
+            text-align: center;
+
+            @media screen and (max-width: 992px) {
+                display: none
+            }
+
+            img {
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border: 3px solid $gray-4;
+                width: 99px;
+                box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
+                -webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
+                
+                &.show {
+                    cursor: pointer;
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        border: 3px solid $primary
+                    }
+                }
+            }
+        }
+        
+        p {
+            font-weight: 700;
+            color: $white;
+            font-size: 20px;
+            line-height: 32px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .close_popup {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+            color: $primary;
+
+            @media screen and (max-width: 992px) {
+                display: none;
+            }
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        .cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            padding: 10px 16px;
+            // margin: 10px 0 0;
+            font-size: 16px;
+            background-color: $primary;
+            color: $white;
+            border: 1.4px solid $primary;
+            font-weight: 500;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+            @media screen and (max-width: 992px) {
+                border-radius: 0px;
+                width: 100%;
+                margin: 0;
+                background-color: $secundary;
+                padding: 10px 5px
+            }
+
+            &:focus, &:hover {
+                background-color: $white;
+                color: $primary;
+                text-decoration: none;
+            }
+        }
+
+        #pestana_bottom {
+            background-color: $gray-4;
+            padding: 55px 0 0;
+            text-align: center;
+            width: 160px;
+            box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
+            -webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
+            display: none;
+            border-radius: 8px;
+
+            @media screen and (max-width: 992px) {
+                border-radius: 0px;
+                background-color: $primary;
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+                box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
+                -webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0,.5);
+                display: block;
+            }
+            
+            &.active {
+                display: block
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    body {
+        margin-bottom: 78px
+    }
+}

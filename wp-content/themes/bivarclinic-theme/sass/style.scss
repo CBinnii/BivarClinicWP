@@ -60,20 +60,60 @@
 @import "_header.scss";
 @import "_footer.scss";
 @import "_main.scss";
+@import "_chat.scss";
+@import "_single.scss";
 @import "_button.scss";
 
 body {
-	background: right 16px top 34px url('../images/clinic.png') $primary no-repeat;
-	background-size: 110px;
-    background-attachment: fixed;
+	background: $white;
 
-	@media screen and (max-width: 991px) {
-		background: right 8px top 100px url('../images/clinic.png') $primary no-repeat;
-		background-size: 60px;
-	}
+    .img-fixed {
+        position: fixed;
+        top: 34px;
+        right: 16px;
+        width: 110px;
+        opacity: 0.7;
 
-    @media screen and (max-width: 540px) {
-		background: $primary no-repeat;
+        @media screen and (max-width: 991px) {
+            right:8px;
+            top: 100px;
+            width: 60px;
+        }
+    
+        @media screen and (max-width: 540px) {
+            display: none;
+        }
+    }
+
+    .section {
+        padding: 50px 0 !important;
+
+        @media screen and (max-width: 767px) {
+            padding: 20px 0 !important;
+        }
+    }
+}
+
+.ask {
+    width: 150px;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    border-radius: 12px;
+    background-color: $primary;
+    -webkit-box-shadow: 0px 0px 26px 0px rgba(25,43,57,0.5);
+    -moz-box-shadow: 0px 0px 26px 0px rgba(25,43,57,0.5);
+    box-shadow: 0px 0px 26px 0px rgba(25,43,57,0.5);
+    
+    a {
+        width: 100%;
+        color: $white;
+        font-size: 18px;
+        line-height: 1.3;
+        padding: 16px 32px;
+        text-align: center;
+        display: block;
+        text-decoration: none;
     }
 }
 

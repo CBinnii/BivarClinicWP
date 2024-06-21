@@ -8,3 +8,12 @@ function menuMobile() {
         menu.classList.add("cross");
     }
 }
+
+jQuery("#pestana_top img.show").click(function(e) {
+    jQuery("#pestana_bottom").addClass("active"),
+    jQuery(this).removeClass("show")
+});
+jQuery(".close_popup").click(function(e) {
+    jQuery("#pestana_bottom").removeClass("active"),
+    jQuery("#pestana_top img").addClass("show")
+});

@@ -1,6 +1,8 @@
 .footer {
     color: $white;
     padding: 24px 0;
+    background-color: #566774;
+    background: linear-gradient(180deg, rgba(104,143,164,0.45702030812324934) 0%, rgba(104,143,164,1) 100%);
 
     img {
         width: 160px;
@@ -10,6 +12,7 @@
     p {
         font-size: 14px;
         color: $white;
+        font-weight: 700;
         text-align: center;
     }
 }
