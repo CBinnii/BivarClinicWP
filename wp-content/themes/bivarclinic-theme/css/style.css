@@ -20837,6 +20837,12 @@ figure.effect-goliath:hover p {
       @media screen and (max-width: 767px) {
         .main .contact p:last-of-type {
           margin-bottom: 20px; } }
+    .main .contact form p {
+      text-align: left;
+      margin-bottom: 0;
+      font-size: 14px; }
+    .main .contact form textarea {
+      height: 150px; }
     .main .contact h6, .main .contact .h6 {
       font-family: 'muli', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 20px;

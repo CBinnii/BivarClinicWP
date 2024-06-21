@@ -6,6 +6,7 @@
 
 // Thumbnail support
 add_theme_support('post-thumbnails', array('page', 'post', 'servico', 'caso-clinico', 'clients'));
+add_theme_support('widgets');
 
 function remove_menus(){
 	remove_menu_page( 'upload.php' ); //Media - imagens, vídeos, docs, etc...

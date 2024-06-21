@@ -560,6 +560,18 @@
             }
         }
 
+        form {
+            p {
+                text-align: left;
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+
+            textarea {
+                height: 150px;
+            }
+        }
+
         h6 {
             font-family: 'muli', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 20px;

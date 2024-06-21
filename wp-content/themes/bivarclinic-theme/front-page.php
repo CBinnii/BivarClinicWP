@@ -189,7 +189,7 @@
 
                     if (!empty($more->posts)): ?>
                             <div class="col-sm-4 post">
-                                <div class="img" style="background-image: url('<?php echo wp_get_attachment_url($more->posts[0]->ID, 'full');?>');">
+                                <div class="img" style="background-image: url('<?php echo get_the_post_thumbnail_url($more->posts[0]->ID);?>');">
                                     <a href="<?php echo $more->posts[0]->post_name; ?>">
                                         <div class="overlay">
                                             <p><?php echo get_the_title($more->posts[0]->ID); ?></p>
@@ -202,7 +202,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-4 post-2">
-                                <div class="img" style="background-image: url(<?php echo wp_get_attachment_url($more->posts[1]->ID, 'full');?>');">
+                                <div class="img" style="background-image: url('<?php echo get_the_post_thumbnail_url($more->posts[1]->ID);?>');">
                                     <a href="<?php echo $more->posts[1]->post_name; ?>">
                                         <div class="overlay">
                                             <p><?php echo get_the_title($more->posts[1]->ID); ?></p>
@@ -214,7 +214,7 @@
                                     </a>
                                 </div>
                                 <hr class="divider">
-                                <div class="img" style="background-image: url('<?php echo wp_get_attachment_url($more->posts[2]->ID, 'full');?>');">
+                                <div class="img" style="background-image: url('<?php echo get_the_post_thumbnail_url($more->posts[2]->ID);?>');">
                                     <a href="<?php echo $more->posts[2]->post_name; ?>">
                                         <div class="overlay">
                                             <p><?php echo get_the_title($more->posts[2]->ID); ?></p>
@@ -227,7 +227,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-4 post">
-                                <div class="img" style="background-image: url('<?php echo wp_get_attachment_url($more->posts[3]->ID, 'full');?>');">
+                                <div class="img" style="background-image: url('<?php echo get_the_post_thumbnail_url($more->posts[3]->ID);?>');">
                                     <a href="<?php echo $more->posts[3]->post_name; ?>">
                                         <div class="overlay">
                                             <p><?php echo get_the_title($more->posts[3]->ID); ?></p>

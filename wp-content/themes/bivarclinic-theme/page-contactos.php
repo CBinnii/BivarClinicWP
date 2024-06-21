@@ -18,32 +18,7 @@
 
 				<div class="row">
 					<div class="col-md-6">
-						<form action="">
-							<div class="mb-3">
-								<label for="exampleFormControlInput1" class="form-label">Nome</label>
-								<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Seu nome">
-							</div>
-							<div class="mb-3">
-								<label for="exampleFormControlInput2" class="form-label">E-mail</label>
-								<input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-							</div>
-							<div class="mb-3">
-								<label for="exampleFormControlInput3" class="form-label">Telefone</label>
-								<input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Seu telefone">
-							</div>
-							<div class="mb-3">
-								<label for="exampleFormControlInput4" class="form-label">Indique a cirurgia ou tratamento que pretende realizar</label>
-								<input type="text" class="form-control" id="exampleFormControlInput4" placeholder="O que pretente realizar?">
-							</div>
-							<div class="mb-3">
-								<label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem"></textarea>
-							</div>
-
-							<div class="button justify-content-start mb-3">
-								<button type="submit" class="button-default">Enviar</button>
-							</div>
-						</form>
+                        <?php echo do_shortcode( '[contact-form-7 id="eafa5f7" title="Formulário de Contacto"]' ); ?>
 					</div>
 					<div class="col-md-6">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6224.5345953203!2d-9.149551!3d38.734628!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19330b3e278fb5%3A0x29276f8a7db931f2!2sAv.%20Lu%C3%ADs%20B%C3%ADvar%2093D%2C%201050-066%20Lisboa!5e0!3m2!1spt-PT!2spt!4v1718288589860!5m2!1spt-PT!2spt" width="100%" height="500" style="border:0; margin: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

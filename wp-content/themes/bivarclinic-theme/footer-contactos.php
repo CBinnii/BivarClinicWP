@@ -2,9 +2,12 @@
         </section>
 
         <footer class="footer">
-            <div class="container">
-            <p><?php echo $texto_footer; ?></p>
-            </div>
+            <?php 
+                $texto_footer = get_field('texto_footer','option');
+            ?>
+			<div class="container">
+				<p><?php echo $texto_footer; ?></p>
+			</div>
         </footer>
 
 		<div id="pestana">
